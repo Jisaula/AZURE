@@ -1,0 +1,24 @@
+---
+title: Apetito de Riesgo
+subtitle: Propuesta
+format: clean-revealjs
+execute: 
+  echo: true
+  output: true
+code-fold: false
+code-overflow: wrap
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: Juan Isaula - Raul Amador
+    affiliations: Data Science
+date: last-modified
+html: 
+  toc: true
+  code-fold: show
+---
+
+## Modelo de Optimización Lineal
+
+
