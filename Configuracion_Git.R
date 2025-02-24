@@ -9,3 +9,7 @@ usethis::create_github_token()
 
 # Pegamos el token generado 
 gitcreds::gitcreds_set()
+
+
+# Pages
+use_github_pages()
