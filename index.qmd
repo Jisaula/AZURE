@@ -1,6 +1,6 @@
 ---
 title: Azure
-subtitle: Microsofts
+subtitle: Arquitectura y Servicios de Microsoft Azure
 format: clean-revealjs
 execute: 
   echo: true
@@ -11,7 +11,7 @@ html-math-method:
   method: mathjax
   url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 author:
-  - name: Juan Isaula 
+  - name: Grupo Financiero Ficohsa 
     affiliations: Data Science
 date: last-modified
 html: 
