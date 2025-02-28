@@ -1688,3 +1688,108 @@ La seguridad en la nube no es sólo una necesidad: es un requisito estratégico.
 Al comprender los desafíos, adoptar las mejores prácticas y utilizar herramientas de última generación que nos permiten navegar por el panorama de la nube con una seguridad reforzada.
 :::
 :::::
+
+# Comprensión de la Gestión y Gobernanza de Microsoft Azure
+
+::::: columns
+::: {.column style="font-size:15px"}
+Comenzaremos nuestro recorrido aprendiendo qué significan los conceptos de administración y gobernanza en Azure y qué tipo de casos de uso y tareas están involucradas. Aprenderá más sobre administración de costos, gobernanza, administración de recursos y monitoreo en Azure.
+:::
+
+::: {.column style="font-size:15px"}
+:::
+:::::
+
+## Administración y gobernanza de Azure
+
+::::: columns
+::: {.column style="font-size:15px"}
+#### Servicios vs Recursos
+
+### Servicios
+
+Un servicio es un conjunto de características o funcionalidades proporcionadas por Azure. Generalmente consiste en una combinación de componentes que trabajan juntos para proporcionar una capacidad específica.
+
+Algunos ejemplos son:
+
+-   Azure Monitor: para la supervisión.
+
+-   Azure Rosource Manager: para la gestión de recursos.
+
+-   Microsoft Cost Management: para la gestión de costos.
+
+### Recursos
+
+Un recurso, por otro lado, es un producto u objeto específico de un servicio. Es cualquier elemento gestionable dentro de Azure.
+
+Algunos ejemplos son:
+
+-   Una base de datos,
+
+-   Una aplicación web o una máquina virtual.
+
+Verá que ambos conceptos surgen con frecuencia mientras analizamos más a fondo los detalles de la administración y la gobernanza en Azure.
+:::
+
+::: {.column style="font-size:15px"}
+#### Administración y Gobernanza en Azure
+
+La gestión y gobernanza consiste en mantener las aplicaciones empresariales y los recursos que las respaldan.
+
+Para ello, hacemos uso de diferentes servicios que ofrece Azure.
+
+![](img/fig124.png)
+
+Tal como podemos apreciar en la imagen previa, podemos distinguir los siguientes cuatro usos generales para la gestión y gobernanza en Azure:
+
+-   Gestión de costos.
+
+-   Implementación de políticas y estándares.
+
+-   Gestión de recursos.
+
+-   Monitoreo.
+:::
+:::::
+
+## 
+
+::::: columns
+::: {.column style="font-size:15px"}
+#### Casos de usos de gestión y gobernanza
+
+![](img/fig125.png){width="140"}
+
+Ahora que sabemos más sobre lo que es la gestión y la gobernanza *¿Se trata de en qué tipo de tareas podemos utilizar Azure en la práctica?*
+
+Los casos de uso típico para la gestión y gobernanza en Azure son:
+
+-   Gestión de recursos que apoyan el negocio.
+
+-   Aplicaciones.
+
+-   Gestión proactiva para evitar sobrepasar el presupuesto.
+
+-   Garantizar que los estándares de protección de datos se implementen y se hagan cumplir.
+
+-   Supervisar el rendimiento y la disponibilidad de sus aplicaciones y recursos.
+
+A lo largo de este documento, analizaremos varios casos de uso con más detalle a medida que obtenga más información sobre las diferentes herramientas de administración y gobernanza proporcionadas en Azure.
+:::
+
+::: {.column style="font-size:15px"}
+#### Ejemplo de caso de uso: Dashboard Performance
+
+Supongamos que está alojando un panel que contiene datos de venta que se pueden explorar de forma interactiva.
+
+![](img/fig126.png){width="200"}
+
+Con la ayuda de azure, puede respaldar el panel con los recursos adecuados. Por ejemplo, puede asegurarse de que el panel de control se pueda manejar variando dinámicamente los niveles de tráfico, ya sea uso pico o baja demanda.
+
+También puede asegurarse de que haya continuidad y recuperación ante desastres con la replicación de datos en todas las regiones de Azure. Hay más cosas que puedes hacer para respaldar y mejorar tu panel de control.
+
+Con los servicios de Azure, también puede recopilar todo tipo de datos de rendimiento. Métricas relacionadas con el panel de control y analizarlas para mejorar la experiencia de uso.
+
+Por ejemplo, podría analizar cómo interactúan los usuarios con el panel y usar esto para agregar o eliminar funciones.
+:::
+:::::
