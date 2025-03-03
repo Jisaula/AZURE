@@ -1793,3 +1793,435 @@ Con los servicios de Azure, también puede recopilar todo tipo de datos de rendi
 Por ejemplo, podría analizar cómo interactúan los usuarios con el panel y usar esto para agregar o eliminar funciones.
 :::
 :::::
+
+## 
+
+::::: columns
+::: {.column style="font-size:15px"}
+#### Gestión y Gobernanza de Costes
+
+Ahora exploremos las capacidades de Azure para la gestión y gobernanza de costos.
+
+Como solución en la nube, Azure ofrece la posibilidad de alquilar recursos y servicios en lugar de comprar y construir su propia infraestructura de servidor.
+
+![](img/fig127.png){width="200"}
+
+Esto siginifica que los costos en Azure están relacionados con la cantidad y el tiempo en que se utilizan los servicios y recursos.
+
+-   Una estructura de costo típica en Azure es el `"pago por uso"`, donde se le cobra en función de su uso real.
+
+-   Además de los servcios nativos de Azure, también puede utilizar servicios de terceros, que se pueden encontrar en `Azure Markeptlace`.
+
+### Gestión de Costos
+
+Estos tienen sus propios costos.
+
+![](img/fig128.png){width="100"}
+:::
+
+::: {.column style="font-size:15px"}
+Dado que usted paga por lo que usa, es muy importante realizar un seguimiento de su uso de Azure y los costos asociados.
+
+Afortunadamente, Azure le proporciona un conjunto de herramientas de gestión de costos. Esto le permitirá realizar un seguimiento de los costos de las aplicaciones y los recursos, establezca presupuestos, límites y alertas y analice sus costos periódicamente.
+
+### Ejemplo de caso de uso: Elaboración de presupuestos
+
+![](img/fig129.png){width="500"}
+
+Supongamos que usted es responsable de configurar los presupuestos en Azure para los proyectos de datos de su empresa. Con Azure, puede establecer límites de gasto para cada proyecto y configurar una alerta para el gerente si el proyecto excede el presupuesto y crear un informe tipo resumen de costos mensual para cada proyectos.
+:::
+:::::
+
+## 
+
+::::: columns
+::: {.column style="font-size:15px"}
+#### Gobernanza y Cumplimiento
+
+![](img/fig130.png){width="100"}
+
+El segundo componente que discutiremos en esta sesión es la gobernanza.
+
+La **gobernanza** se puede definir como los principios rectores que una empresa establece para dirigir sus operaciones de manera responsable, por ejemplo, definiendo reglas de seguridad.
+
+Estos principios rectores son la rendición de cuentas, la transparencia y la seguridad.
+
+Un caso de uso típico es el `cumplimiento`. Cumplimiento significa adherirse a los estándares industriales aplicables, leyes y normas, por ejemplo, respecto a la privacidad y la protección de datos. Esto es supervizado por organizaciones internas y externas.
+
+Las grandes empresas pueden tener un departamento de cumplimiento, por ejemplo:
+
+-   La supervisión externa normalmente la lleva a cabo un organismo gubernamental, como la Reserva Federal para los bancos en Estados Unidos.
+:::
+
+::: {.column style="font-size:15px"}
+### Gobernanza con Azure {.column style="font-size:15px"}
+
+Como vimos antes, la rendición de cuenta y la transparencia son partes importantes de la gobernanza.
+
+![](img/fig131.png){width="500"}
+
+Por lo general, esto también significa que una empresa necesita documentar e informar cómo cumple con sus obligaciones.
+
+Aquí es donde entra Azure, las tareas de gobernanza típica en Azure incluyen la configuración de políticas de gobernanza específicas y el registro de usuarios. Acciones para proporcionar una pista de auditoría y documentar e informar sobre el cumplimiento de las obligaciones regulatorias.
+
+Azure también puede tener en cuenta diferentes requisitos según las diferencias regionales en normas y regulaciones.
+:::
+:::::
+
+## 
+
+::::: columns
+::: {.column style="font-size:15px"}
+#### Ejemplo de caso de uso: Normativa de protección de datos
+
+Supongamos que usted es el responsable de cumplimiento encargado de garantizar que su empresa cumpla con las normas de protección de datos.
+
+![](img/fig132.png){width="500"}
+
+Con Azure, puede realizar tareas como aplicar la confidencialidad de los datos. Etiquetas como `"confidencial"` y requieren encriptación para datos sensibles.
+:::
+
+::: {.column style="font-size:15px"}
+#### Gestión y Seguimiento de Recursos
+
+Profundizaremos en los componentes de supervisión y administración de recursos de Azure.
+
+### Administración de Recursos en Azure
+
+La administración de recursos es la creación, organización y control de recursos en Azure.
+
+![](img/fig133.png){width="200"}
+
+Azure tiene algunas caracterísiticas importantes relacionadas con la gestión de recursos:
+
+-   Infraestructura:\
+    \
+    -   Como un código (IaC), que se refiere a cómo se administra la infraestructura de recursos en Azure;\
+    -   Etiquetas de recursos y,\
+    -   Bloqueos de recursos, que se utilizan para organizar y controlar recursos.\
+:::
+:::::
+
+## 
+
+::::: columns
+::: {.column style="font-size:15px"}
+### Infraestructura como código (IaC)
+
+La infraestructura como código o IaC es la base del modo en que se automatizan los recursos en Azure.
+
+Significa que los recursos se gestionan mediante código estructurado y herramientas de automatización en lugar de procesos manuales.
+
+Esto tiene varias ventajas:
+
+-   Garantiza la coherencia y reproducibilidad, es más fácil documentar y compartir y es menos propenso a errores. Compare esto con el guión de obra de teatro. Un guión contiene todas las señales, roles y direcciones escénicas necesarias para la obra. De manera similar, `IaC` utiliza archivos de configuración para definir una configuración específica para los recursos.
+
+Esto también garantiza la coherencia entre diferentes casos de uso y permite actualizaciones fáciles, como también puede hacer un script para ser reutilizado por otros grupos o adaptado para adaptarse a un estilo diferente sin tener que reescribir el guión desde cero.
+
+Sin embargo, IaC no es fácil de aprender y requiere experiencia en codificación.
+
+### Etiquetas y bloqueos de Recursos en Azure
+
+![](img/fig134.png){width="150"}
+
+Otra característica importante de administración de recursos en Azure es el uso de etiquetas de recursos y bloqueos de recursos.
+:::
+
+::: {.column style="font-size:15px"}
+**Etiquetas de Recursos:** son metadatos que se utilizan para organizar y controlar recursos.
+
+Las etiquetas de recursos se utilizan específicamente para etiquetar recursos, para realizar un seguimiento más eficiente de ellos, por ejemplo, para realizar el seguimiento de los costos.
+
+Se pueden comparar con etiquetar cajas en un almacén para darle seguimiento a su contenido y ubicación original en caso de ser trasladadas.
+
+**Bloqueos de Recursos:** se utilizan para evitar modificaciones de recursos o para evitar su eliminación, ya sea accidental o intencionada.
+
+Los bloqueos se pueden configurar de forma permanente o temporal, por ejemplo, durante el mantenimiento.
+
+Se podrían comparar co poner candados en algunas cajas de almacén.
+
+### Ejemplo caso de uso: Negocio - Recursos críticos
+
+Supongamos que usted es responsable de gestionar información crítica para el negocio sobre recursos en Azure y es necesario asegurarse de que esos recursos no se puedan eliminar.
+
+Con Azure, puede usar etiquetas de recursos para etiquetar los recursos como `críticos` y ponerles bloqueos de recursos para bloquear su eliminación.
+
+Ver la siguiente imagen:
+:::
+:::::
+
+## 
+
+::::: columns
+::: {.column style="font-size:15px"}
+![](img/fig135.png)
+
+#### Monitoreo con Azure
+
+![](img/fig136.png)
+:::
+
+::: {.column style="font-size:15px"}
+Nuestro componente final en esta sesión es el `monitoreo`.
+
+La supervisión es importante para mantener una descripción general de todos los procesos en Azure y su rendimiento.
+
+Las tareas de supervisión típicas en Azure incluyen:
+
+-   Identificar posibles problemas con los recursos o aplicaciones.
+
+-   Seguimiento del uso y los costos, y análisis de los datos registrados para planificar las necesidades futuras.
+
+Azure ofrece una solución integral para la monitorización, con una gran cantidad de capacidades para detectar problemas de forma proactiva y optimizar procesos.
+
+### Ejemplo caso de uso: Supervisión del estado de la aplicación
+
+Supongamos que administra una aplicación web con la ayuda de Azure. Es una aplicación fundamental para el negocio, por lo que su tarea es garantizar que el tiempo de inactividad sea mínimo.
+
+![](img/fig137.png){width="300"}
+
+Con azure, puede realizar tareas como detectar de forma proactiva problemas con los recursos, evitar tiempos de inactividad y monitorear el tráfico de uso para planificar nueva capacidad de recursos si es necesario.
+:::
+:::::
+
+# Gestión y Gobernanza de Costes
+
+::::: columns
+::: {.column style="font-size:15px"}
+Después de este capítulo, la gestión y la gobernanza de costos ya no serán ningún secreto para usted. Aprenderá a planificar y administrar costos en Azure y a trabajar con las herramientas de gestión de costos de Azure. También se familiarizará con la implementación de la gobernanza y el cumplimiento normativo, y con las herramientas que Azure ofrece para ayudarlo con eso.
+:::
+
+::: {.column style="font-size:15px"}
+:::
+:::::
+
+## Planificación y Gestión de Costos
+
+::::: columns
+::: {.column style="font-size:15px"}
+Aprenderemos más sobre cómo se manejan los costos en Azure.
+
+#### Factores que afectan los costos
+
+![](img/fig127.png){width="200"}
+
+Existen algunos factores que influyen en los costos en Azure, discutiremos los factores de costos más importantes:
+
+-   **`Consumo:`** sabiendo que el modelo de precios estándar en Azure es el pago por uso, el consumo afecta lógicamente los costos. Es decir, a medida que se utilizan los recursos se generan costos. Tenga en cuanto que solo la creación de recursos no genera costos; solo cuenta su uso real.
+
+-   **`Tipo de suscripción:`** algunos tipos de suscripciones incluyen bonificaciones o productos gratuitos. La cuenta gratuita de Azure, por ejemplo, ofrece a los usuarios un uso gratuito limitado de algunos servicios.
+
+-   **`Tipo de recurso y configuración:`** los recursos pueden tener niveles más altos, lo que genera costos más altos. Una maquina virtual, por ejemplo, tiene diferentes niveles de tamaño que ofrecen más potencia informática pero también cuestan más.
+
+-   **`Región y zonas de facturación:`** no solo los precios pueden variar según la región en la que te encuentres, sino que también se cobrarán costes si se realizan transferencias de datos a otras regiones.
+:::
+
+::: {.column style="font-size:15px"}
+### Formas de gestionar los costos
+
+Ahora que sabemos qué factores afectan los costos, podemos buscar estrategias para reducirlos.
+
+![](img/fig138.png)
+
+-   La primera estrategia es contar con `procesos de mantenimiento y monitoreo`. Estos pueden ayudar a encontrar recursos que están subutilizados o que tienen costos más altos que el promedio.
+
+-   En segundo lugar, podría valer la pena considerar `otros modelos de precios` que no sean el de pago por uso. Esto es especialmente interesante si existe una demanda estable a largo plazo para los recursos en Azure Cloud en lugar de una necesidad de flexibilidad a corto plazo.
+
+-   Para los costos relacionados con la `geografía`, podemos minimizar las transferencias de datos a otras regiones de Azure.
+
+-   Por último, Azure también proporciona varias `herramientas de gestión de costos`. Estas nos ayudan con la estimación de costos, presupuestos y alertas de gastos. Veremos más sobre estas herramientas más adelante.
+:::
+:::::
+
+## 
+
+::::: columns
+::: {.column style="font-size:15px"}
+#### Tareas de gestión de costos
+
+Analicemos ahora algunos ejemplos de tareas de gestión de costos en Azure.
+
+![](img/fig139.png){width="700"}
+
+Si su infraestructura local necesita migrarse a la nube, puede comparar costos con el mismo entorno en Azure Cloud.
+
+Si necesita crear nuevos recursos, primero puede estimar cuánto van a costar.
+
+Para los recursos que ya se están utilizando, puede obtener información en el gasto haciendo un análisis de costos y estableciendo presupuestos o alertas.
+
+Para cada una de estas tareas, Azure proporciona herramientas para ayudarlo. Discutiremos estas herramientas con más detalle en la siguiente sesi
+:::
+
+::: {.column style="font-size:15px"}
+### Ejemplo caso de uso: Costos de una máquina virtual (VM)
+
+Supongamos que está trabajando en un proyecto de datos para el cual necesita crear una máquina virtual en Azure.
+
+El presupuesto es ajustado, por lo que es necesario equilibrar los requisitos del proyecto con el presupuesto disponible.
+
+Para facilitar esta tarea, puede estimar de antemano los costos de la máquina virtual y otros recusos necesarios.
+
+Azure también le informará del costo por mes una vez que esté en el proceso de crear la VM y elegir su tamño.
+
+Una vez que la máquina virtual esté en funcionamiento, Azure puede ayudar a monitorear su uso y costos.
+:::
+:::::
+
+## Herramientas de gestión de costos
+
+::::: columns
+::: {.column style="font-size:15px"}
+Ahora, analizaremos las herramientas de gestión de costos con más detalle.
+
+Existen tres herramientas principales que se utilizan para la gestión de costos en Azure:
+
+| Herramienta | Uso |
+|------------------------------------|------------------------------------|
+| Calculadora de precios | Se utiliza para estimar los costos de una configuración de recursos específica en Azure. |
+| Calculadora de TCO | Se utiliza para comparar los costos totales de infraestructura local con la misma configuración en Azure. |
+| Plataforma de gestión de costos | Proporciona a los usuarios información y controles para monitorear, analizar y optimizar los costos. |
+
+### Calculadora de precios
+
+Como ya lo mencionamos la utilizamos para estimar los costos de una configuración de recursos específica en Azure.
+
+![](img/fig140.png){width="400"}
+:::
+
+::: {.column style="font-size:15px"}
+Está disponible gratuitamente; también puedes acceder a ella sin iniciar sesión en Azure. Le ayudará a estimar los costos individuales o de una combinación.
+
+La calculadora de precios también tiene escenarios de plantilla; por ejemplo:
+
+-   Puede estimar los costos de una configuración típica de análisis de big data.
+
+### Calculadora TCO
+
+TCO significa costo total de propiedad.
+
+![](img/fig141.png){width="400"}
+
+Es una forma integral de analizar los costos, incluidos los costos ocultos, como los costos operativos. La calculadora TCO le ayuda a comprender los costos de trasladar su infraestructura local con Azure Cloud comparando los costos TCO para ambos.
+
+Al igual que la *Calculadora de Precios*, esta herramienta también está disponible de forma gratuita.
+
+Generalmente se utiliza para respaldar y preparar la migración a Azure.
+:::
+:::::
+
+## 
+
+::::: columns
+::: {.column style="font-size:15px"}
+### Gestión de costos
+
+La gestión de costos puede considerarse el eje central en Azure para todo lo relacionado con los costos.
+
+![](img/fig139.png){width="400"}
+
+Permite configurar presupuestos y alertas de costos, administrar la facturación, opciones y facturas, y exportar detalles de costos externamente usando una API.
+
+Para analizar los costos, dentro de la *Gestión de Costos* existe una herramienta específica: la `herramienta de Análisis de Costos`.
+
+### Herramienta de Analisis de Costos
+
+La herramienta de análisis de costos dentro de la plataforma de gestión de costos se utiliza principalmente para la exploración de costos ad hoc.
+
+Puede crear visualizaciones personalizadas y aplicar filtros, por ejemplo, para analizar y visualizar los costos del mes anterior de todos los recursos con una etiqueta de recursos específicos.
+
+Además, también puede crear pronósticos de costos basados en el historial de datos de costos disponibles.
+:::
+
+::: {.column style="font-size:15px"}
+![](img/fig142.png){width="500"}
+
+Para un análisis más avanzado, es posible exportar datos de costos a Power BI, el software de Business Intelligence de Microsoft.
+
+Volvamos a nuestro caso de uso anterior, donde necesitamos crear una nueva VM en Azure para nuestro proyecto de datos.
+
+Para estimar sus costos utilizaríamos la calculadora de precios.
+
+Azure también muestra el costo por mes como un recordatorio adicional cuando creamos el recurso. Una vez creada la VM, podemos realizar un seguimiento de los costos y el uso mediante la Gestión de Costos.
+:::
+:::::
+
+## Implementación de Gobernanza y Cumplimiento
+
+::::: columns
+::: {.column style="font-size:15px"}
+Aprenderemos cómo Azure ayuda en la implementación de gobernanza y cumplimiento.
+
+#### Portal de Confianza del Servicio
+
+Al utilizar Azure Cloud, Microsoft, como proveedor de la nube, también es responsable de garantizar que nuestros datos puedan almacenarse de forma segura en la nube.
+
+![](img/fig143.png){width="600"}
+
+El `Portal de Confianza del Servicio` sirve como un repositorio donde Microsoft detalla sus prácticas de seguridad, privacidad y cumplimiento.
+
+Además de documentar los propios controles y procesos de Microsoft para la protección de datos y la privacidad. Este portal proporciona recursos y documentación para que podamos gestionar el cumplimiento y la seguridad de los datos.
+:::
+
+::: {.column style="font-size:15px"}
+Esto incluye documentación sobre certificaciones específicas como ISO (Organización de Normalización Internacional) y GDPR (Reglamento General de Protección de Datos).
+
+#### Microsoft Purview
+
+Es un servicio integral de gestión de datos para Azure y otros productos de Microsoft.
+
+![](img/fig144.png){width="600"}
+
+Combina lo que anteriormente era Azure Purview y Microsoft 365 Compliance. El propósito de esta plataforma es ayudarlo a administrar activos de datos, específicamente seguridad de datos, gobernanza de datos, riesgo y cumplimiento de datos.
+
+Discutiremos algunos casos de uso específicos en la siguiente diapositiva.
+:::
+:::::
+
+## 
+
+::::: columns
+::: {.column style="font-size:15px"}
+Microsoft Purview tiene caracterísiticas específicas para ayudarlo con las tareas comunes de `gobernanza de datos.`
+
+![](img/fig145.png){width="500"}
+
+El Catálogo de datos le permite mantener una visión general centralizada de todos los activos de datos y sus metadatos.
+
+El mapa de datos proporciona una representación visual de los flujos de datos a través de sistemas y aplicaciones que le permiten rastrear el origen y el destino de los datos.
+
+Microsoft Purview también ayuda con el etiquetado de datos, la clasificación y el enriquecimiento de metadatos.
+
+Por último, también admite la transferencia segura de datos y el uso compartido con otros usuarios de Azure.
+:::
+
+::: {.column style="font-size:15px"}
+#### Microsoft Purview: Administrador de cumplimiento
+
+Además de la gestión de activos de datos, también ofrece una herramienta para evaluación del cumplimiento de los activos de datos con regulaciones y estándares específicos: `Compliance Manager (Administrador de cumplimiento)`.
+
+![](img/fig146.png)
+
+El Administrador de Cumplimiento muestra un panel que revisa el cumplimiento actual, estado de todos los activos de datos y utiliza un sistema de puntuación para resumir el cumplimiento general.
+
+Para mejorar la puntuación y por tanto el cumplimiento, el Compliance Manager genera automáticamente recomendaciones específicas.
+:::
+:::::
+
+## 
+
+::::: columns
+::: {.column style="font-size:15px"}
+#### Caso de uso: Usando el portal de confianza del servicio
+
+Supongamos que usted es responsable de los datos personales de los clientes. De acuerdo con el RGDP, necesita saber cómo gestionar las solicitudes de los interesados. Es el derecho a que sus datos personales sean revisados, corregidos o eliminados.
+
+Puede utilizar el portal de confianza del servicio para consultar las normas y directrices específicas con respecto a los DSR en el RGDP.
+
+![](img/fig143.png){width="600"}
+
+Además, también puede encontrar orientación sobre cómo manejar dichas solicitudes, específicamente en Azure.
+:::
+
+::: {.column style="font-size:15px"}
+:::
+:::::

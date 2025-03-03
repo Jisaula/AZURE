@@ -13,3 +13,9 @@ gitcreds::gitcreds_set()
 
 # Pages
 use_github_pages()
+
+
+library(DBI)
+
+con <- dbConnect(odbc::odbc(),
+                 dsn = "SQLPools")
