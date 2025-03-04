@@ -2225,3 +2225,93 @@ Además, también puede encontrar orientación sobre cómo manejar dichas solici
 ::: {.column style="font-size:15px"}
 :::
 :::::
+
+## Herramientas de Gobernanza y Cumplimiento
+
+::::: columns
+::: {.column style="font-size:15px"}
+En esta sección, analizaremos las herramientas de gobernanza y cumplimiento en Azure.
+
+Existen dos herramientas específicas en Azure que usarás mucho para gobernanza y cumplimiento:
+
+| Herramienta | Uso |
+|------------------------------------|------------------------------------|
+| Azure Policy | Se utiliza para aplicar estándares y mejores prácticas mediante la definición y aplicación de reglas y políticas a los recursos. |
+| Azure Blueprints | Se utiliza para estandarizar implementaciones y replicar configuraciones de entornos existentes. |
+
+Discutiremos ambas con más detalle.
+
+#### Azure Policy
+
+Como su nombre lo indica, se utiliza para establecer políticas, conjuntos específicos de reglas y estándares para recursos.
+
+![](img/fig147.png){width="500"}
+:::
+
+::: {.column style="font-size:15px"}
+Esto se hace para hacer cumplir el cumplimiento de las normas y regulaciones aplicables.
+
+Las reglas establecidas por Azure Policy se pueden establecer en cualquier nivel y ser heredadas automáticamente por los subniveles
+
+Por ejemplo, una política podría aplicarse a un recurso específico o a un grupo de recursos, por lo que nos nuevos recursos creados en este grupo asumirían automáticamente la misma política.
+
+`Azure Policy` no solo le permite establecer estas reglas, sino que también permite la corrección automática. Por ejemplo, si faltan las etiquetas de recursos necesarias, se pueden aplicar automáticamente.
+
+Normalmente, hay una multitud de conjuntos de reglas relacionadas que deben establecerse para cumplir con las regulaciones.
+
+### Azure Policy: Iniciativas
+
+Para ayudar con esto, las políticas de Azure se pueden agrupar en las denominadas *Iniciativas*.
+
+**Iniciativas:** son grupos de políticas relacionadas con un objetivo mayor.
+
+Estas iniciativas pueden ser definidas por el usuario, o los usuarios pueden hacer uso de ellas. Por ejemplo, Azure Policy tiene una iniciativa incorporada para el cumplimiento de HIPAA/HITRUST, la principal regulación estadounidense que protege los datos y la privacidad en la atención médica.
+
+Esta iniciativa contiene, entre otras, las siguientes políticas: multifactorial. La autenticación debe estar habilitada y debe haber más de un propietario asignado a una suscripción, y debería haber una verificación automática de los miembros que faltan en el grupo de Administradores.
+:::
+:::::
+
+## 
+
+::::: columns
+::: {.column style="font-size:15px"}
+![](img/fig148.png){width="1000"}
+
+#### Azure Blueprints
+
+La segunda herramienta que encontrará mucho en el contexto de gobernanza y cumplimiento es Azure Blueprints.
+
+![](img/fig149.png)
+
+Esta herramienta le permite estandarizar nuevas suscripciones a la nube o la implementación de entornos de recursos.
+:::
+
+::: {.column style="font-size:15px"}
+Al hacerlo, Azure preserva el vínculo entre el plan original y los recursos implementados. En otras palabras, nos permite rastrear si lo que se implementó se ajusta a lo que debería haber implementado.
+
+Además, Azure Blueprints admite el control de versiones, lo que significa que se pueden realizar actualizaciones. Fácilmente rastreable o revertido, lo que garantiza la transparencia y respalda la recuperación en caso de problemas.
+
+Azure Blueprints consta de componentes, que se denominan artefactos en Azure.
+
+![](img/fig150.png){width="1000"}
+
+Estos contienen parámetros específicos que se pueden definir. Esta configuración se puede realizar directamente en el Blueprint para estandarización o en implementación si se requiere cierta flexibilidad, dependiendo de los requisitos para la implementación. Ejemplos de posibles artefactos son: asignaciones de roles, asignaciones de políticas, configuración de grupos de recursos o plantillas de recursos predefinidas.
+:::
+:::::
+
+## 
+
+::::: columns
+::: {.column style="font-size:15px"}
+#### Caso de uso: política de seguridad de red
+
+Seponga que es responsable de implementar las mejores prácticas para la seguridad de la red, como Deshabilitar el acceso público a internet según reglas específicas, como si el recurso es sensible o no.
+
+-   Con Azure Policy, puede implementar un conjunto de reglas que bloqueen o restrinjan el acceso público a internet. Para ello, puede buscar las definiciones de políticas integradas para comenzar y personalizar la política como desee.
+
+-   Además, puede inlcuir la política como un artefacto en un plan de Azure para que las nuevas implementaciones implementen automáticamente las reglas de seguridad de la red sin tener que configurarlas desde cero.
+:::
+
+::: {.column style="font-size:15px"}
+:::
+:::::
